@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Credit https://www.youtube.com/watch?v=HEsAr2Yt2do&t=44s -->
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <canvas id="tetris" width="300" height="450"></canvas>
+        </div>
+        <div>
+            <h1 id="message">Tetris</h1>
+
+            <h2>
+                Score : <div id="score">0</div>
+            </h2>
+
+            <p>Instructions</p>
+            <p><span>←</span> Left arrow key: Move block to the left</p>
+            <p><span>→</span> Right arrow key: Move block to the right</p>
+            <p><span>↓</span> Down arrow key: Move block down</p>
+            <p><span>↑</span> Up arrow key: Rotate block clockwise</p>
+        </div>
+    </div>
+
+    <script src="tetrominoes.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
