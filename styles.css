@@ -22,10 +22,10 @@ body {
 }
 
 h1 {
-    line-height: 1em;
     margin: 0;
     padding: 0;
 }
+
 h1, h3, .accent, p span, #score {
     color: var(--accent-color);
 }
@@ -35,8 +35,15 @@ h1, h3, .accent, p span, #score {
     justify-content: center;
 }
 
-.container > div {
-    padding: 0 10px;
+.parent {
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+    margin-left: 20px;
+}
+
+.end {
+    align-self: flex-end;
 }
 
 canvas {
@@ -50,9 +57,26 @@ canvas {
 
 p {
     font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
 }
 
 .alert {
     font-size: 1.6em;
     color: var(--gameover-color);
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+p.top,
+p.icon {
+    margin: 3em 0 0 0;
+
+}
+svg {
+    fill: #64ffda;
+    width: 25px;
 }
