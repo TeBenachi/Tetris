@@ -15,40 +15,36 @@ body {
     font-family: 'Oswald', sans-serif;
     color: var(--text-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     margin: 0;
+    padding: 10px;
 }
 
-h1 {
+header, footer {
+   margin: 0;
+   padding:0;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    width: 100%;
+    max-width: 300px;
+}
+
+h1, h2 {
     margin: 0;
     padding: 0;
 }
 
-h1, h3, .accent, p span, #score {
+h1, .accent, p span, #score {
     color: var(--accent-color);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.parent {
-    display: flex;
-  flex-direction: column;
-  height: 100%;
-    margin-left: 20px;
-}
-
-.end {
-    align-self: flex-end;
-}
-
-canvas {
-    display: block;
-    border: 1px solid #172a45;
 }
 
 #score {
@@ -57,26 +53,14 @@ canvas {
 
 p {
     font-size: 0.9em;
-    margin: 0;
-    padding: 0;
-    line-height: 2em;
+    text-align: center;
+    line-height: 1em;
 }
 
 .alert {
-    font-size: 1.6em;
     color: var(--gameover-color);
 }
 
-h2 {
-    margin: 1em 0;
-}
-
-p.top,
-p.icon {
-    margin: 3em 0 0 0;
-
-}
 svg {
     fill: #64ffda;
-    width: 25px;
 }
